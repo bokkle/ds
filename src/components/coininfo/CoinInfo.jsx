@@ -2,7 +2,7 @@ import { coinInfo, prophecy } from '../../constants';
 
 const CoinInfo = () => {
   return (
-    <section className="overflow-hidden bg-zinc-900 px-4 py-20 md:px-6 lg:px-8 lg:py-28">
+    <section id='token' className="overflow-hidden bg-zinc-900 px-4 py-20 md:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto w-full max-w-7xl">
         <p className="text-center font-mono uppercase text-lime-700">c addy</p>
         <p className="text-center text-lime-400">

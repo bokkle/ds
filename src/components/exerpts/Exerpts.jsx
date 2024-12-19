@@ -3,7 +3,7 @@ import { MdArrowOutward } from 'react-icons/md';
 
 const Exerpts = () => {
   return (
-    <section className="bg-zinc-950 px-4 py-20 md:px-6 lg:px-8">
+    <section id="exerpts" className="bg-zinc-950 px-4 py-20 md:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-7xl">
         <h2 className="text-center font-mono uppercase text-lime-700">
           full exerpts

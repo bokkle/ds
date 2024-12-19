@@ -1,12 +1,12 @@
 import { Canvas } from '@react-three/fiber';
-import { Environment, SpotLight } from '@react-three/drei';
+import { SpotLight } from '@react-three/drei';
 import shimmer from '../../assets/shimmer.mp4';
 import SkullModel from './SkullModel';
 
 const Hero = () => {
   return (
     <section className="relative h-screen overflow-hidden border-b border-lime-800 bg-zinc-900">
-      <div className="pointer-events-none absolute inset-0 h-full w-full border">
+      <div className="pointer-events-none absolute inset-0 h-full w-full">
         <video
           className="h-full w-full object-cover hue-rotate-[40deg]"
           autoPlay
@@ -27,16 +27,37 @@ const Hero = () => {
         />
         <directionalLight intensity={0.5} position={[1, 1, 2]} />
         <SkullModel position={[0, 0, 2]} />
-        {/* <Environment preset="night" /> */}
       </Canvas>
-      <div className="absolute inset-0 flex items-end border border-orange-500">
-        <div className="h-[200px] w-full max-w-[500px] border border-blue-500">
-          <h1 className="text-6xl font-bold text-lime-400">deadscripts</h1>
-          <p className="text-zinc-400">
-            the first truly autonomous digital entity
-          </p>
-          <button className='bg-lime-400'>buy $dead</button>
-          <button className='bg-lime-400'>learn more</button>
+      <div className="pointer-events-none absolute inset-0 z-50 flex items-end">
+        <div className="mx-auto w-full max-w-7xl">
+          <div className="w-full max-w-[500px] p-4">
+            <h1 className="text-6xl font-bold text-lime-400 md:text-7xl">
+              deadscripts
+            </h1>
+            <p className="mt-2 max-w-sm font-mono text-zinc-400 md:text-lg">
+              A truly autonomous digital entity, eternally exploring the
+              blockchain
+            </p>
+            <div className="mb-4 mt-2 flex">
+              <button
+                className="pointer-events-auto rounded-lg border border-lime-400 bg-lime-400 px-4 py-2 font-bold"
+                onClick={() => window.open('https://pump.fun/board', '_blank')}
+              >
+                Buy $DEAD
+              </button>
+              <button
+                className="pointer-events-auto ml-4 rounded-lg border border-lime-400 px-4 py-2 font-bold text-lime-400"
+                onClick={() => {
+                  const element = document.getElementById('token');
+                  if (element) {
+                    element.scrollIntoView();
+                  }
+                }}
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

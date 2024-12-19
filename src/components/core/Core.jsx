@@ -41,7 +41,7 @@ const Core = () => {
   }, [process, currSentiment]);
 
   return (
-    <section className="bg-zinc-900 px-4 py-20 md:px-6 lg:px-8">
+    <section id="core" className="bg-zinc-900 px-4 py-20 md:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="border border-lime-800 bg-zinc-950 p-6 md:p-8">
