@@ -5,9 +5,8 @@ About
 This project is built using React and Vite for rapid development with fast hot module reloading (HMR). The frontend interacts with mock data and serves as a starting point for building out a full cryptocurrency experience in the future.
 
 Features
+3D hero model: Tracks and looks at user cursor.
 Contract Address Display: A section displaying the contract address for the coin, with a copy-to-clipboard functionality.
-Coin Info Section: Dynamic rendering of the coin’s details like market cap, circulating supply, and other relevant metrics.
-CountUp Animation: Animations that trigger once the user scrolls into the section containing the coin's information.
 Responsive Design: Mobile-friendly layout using Tailwind CSS, providing a modern user experience.
 Current Status
 The coin information displayed is for conceptual purposes only.
