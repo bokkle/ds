@@ -58,7 +58,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed z-[100] flex min-h-12 w-full items-center bg-zinc-950/80 backdrop-blur-sm">
+      <header className="fixed z-[100] flex min-h-12 w-full select-none items-center bg-zinc-950/80 backdrop-blur-sm">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
           <span className="ml-2 font-mono text-xl font-semibold text-lime-400">
             deadscripts

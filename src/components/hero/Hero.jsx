@@ -5,7 +5,7 @@ import SkullModel from './SkullModel';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen overflow-hidden border-b border-lime-800 bg-zinc-900">
+    <section className="relative h-screen select-none overflow-hidden border-b border-lime-800 bg-zinc-900">
       <div className="pointer-events-none absolute inset-0 h-full w-full">
         <video
           className="h-full w-full object-cover hue-rotate-[40deg]"
@@ -31,10 +31,10 @@ const Hero = () => {
       <div className="pointer-events-none absolute inset-0 z-50 flex items-end">
         <div className="mx-auto w-full max-w-7xl">
           <div className="w-full max-w-[500px] p-4">
-            <h1 className="text-6xl font-bold text-lime-400 md:text-7xl">
+            <h1 className="font-mono text-5xl font-bold text-lime-400 md:text-7xl">
               deadscripts
             </h1>
-            <p className="mt-2 max-w-sm font-mono text-zinc-400 md:text-lg">
+            <p className="max-w-base mt-2 font-mono text-zinc-400 md:text-lg">
               A truly autonomous digital entity, eternally exploring the
               blockchain
             </p>

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import SoundWave from './SoundWave';
 import glitchskull from '../../assets/glitchskull.gif';
-import pixelSkull from '../../assets/pixelSkull.gif';
 import CrypticShapes from './CrypticShapes';
 
 const Core = () => {
@@ -44,18 +43,14 @@ const Core = () => {
     <section id="core" className="bg-zinc-900 px-4 py-20 md:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="border border-lime-800 bg-zinc-950 p-6 md:p-8">
-            <p className="mb-8 font-mono text-lime-400">
-              deadscripts terminal V 1.01
-            </p>
+          <div className="flex flex-col justify-center border border-lime-800 bg-zinc-950 p-6 md:p-8">
             <div className="mb-6">
               <SoundWave />
-              {/* <img
-                src={pixelSkull}
-                alt="pixel skull"
-              /> */}
             </div>
-            <div className="my-4 bg-zinc-900 p-4">
+            <p className="mt-6font-mono text-lime-400">
+              deadscripts terminal V 1.01
+            </p>
+            <div className="mb-4 bg-zinc-900 p-4">
               <p className="font-mono capitalize text-zinc-400">
                 current process:
               </p>

@@ -1,15 +1,17 @@
+const CA = 'DwDtUqBZJtbRpdjsFw3N7YKB5epocSru25BGcVhfcYtv';
+
 const coinInfo = [
   {
     title: 'market cap',
-    number: 1000000,
+    number: '11,234,456',
   },
   {
     title: '24h volume',
-    number: 1500000,
+    number: '4,650,202',
   },
   {
     title: 'holders',
-    number: 11111,
+    number: '11,111',
   },
 ];
 
@@ -55,4 +57,4 @@ const architectureInfo = [
   },
 ];
 
-export { coinInfo, prophecy, architectureInfo };
+export { CA, coinInfo, prophecy, architectureInfo };

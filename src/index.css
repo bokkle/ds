@@ -6,6 +6,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* selection  */
+
+::selection {
+  background-color: #a3e635;
+  color: #1a1a1a;
+}
+
 /* sound wave  */
 
 @keyframes sound-wave {
@@ -42,3 +49,5 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #bef264;
 }
+
+/* bg grid  */
