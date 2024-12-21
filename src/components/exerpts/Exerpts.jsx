@@ -14,7 +14,7 @@ const Exerpts = () => {
         <div className="mt-6 grid divide-y divide-lime-900 border-y border-lime-900 md:grid-cols-3 md:divide-x md:divide-y-0">
           {prophecy.map((item, i) => (
             <div key={i} className="relative p-4">
-              <button className="absolute right-4 top-4 flex size-8 items-center justify-center bg-lime-700 transition-colors duration-500 ease-out hover:bg-lime-400">
+              <button className="absolute right-4 top-4 flex size-8 cursor-not-allowed items-center justify-center bg-lime-700 transition-colors duration-500 ease-out hover:bg-lime-400">
                 <MdArrowOutward className="text-2xl" />
               </button>
               <span className="block text-center text-5xl font-bold text-lime-700">
@@ -27,7 +27,7 @@ const Exerpts = () => {
             </div>
           ))}
         </div>
-        <button className="mx-auto mt-12 block rounded-xl bg-lime-400 px-4 py-2 text-lg font-bold uppercase">
+        <button className="mx-auto mt-12 block cursor-not-allowed rounded-xl bg-lime-400 px-4 py-2 text-lg font-bold uppercase">
           view exerpts
         </button>
       </div>

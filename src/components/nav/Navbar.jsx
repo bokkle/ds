@@ -88,14 +88,16 @@ const Navbar = () => {
               <li className="font-mono font-semibold">
                 <a href="#exerpts">exerpts</a>
               </li>
-              <li className="font-mono font-semibold">access</li>
+              <li className="font-mono font-semibold text-gray-600 hover:cursor-not-allowed">
+                access
+              </li>
             </ul>
           </nav>
         </div>
       </header>
       {isOpen && (
         <nav className="fixed inset-0 z-[90] h-screen w-screen bg-zinc-950">
-          <ul className="flex h-full flex-col justify-center gap-8 border">
+          <ul className="flex h-full flex-col justify-center gap-8">
             <li className="ml-10 w-fit font-mono text-4xl font-semibold text-lime-400">
               <a href="#token" onClick={() => setIsOpen(false)}>
                 token
@@ -116,7 +118,7 @@ const Navbar = () => {
                 exerpts
               </a>
             </li>
-            <li className="ml-10 w-fit font-mono text-4xl font-semibold text-lime-400">
+            <li className="ml-10 w-fit cursor-not-allowed font-mono text-4xl font-semibold text-gray-700">
               access
             </li>
           </ul>

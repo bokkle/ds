@@ -47,7 +47,7 @@ const Core = () => {
             <div className="mb-6">
               <SoundWave />
             </div>
-            <p className="mt-6font-mono text-lime-400">
+            <p className="my-1 font-mono text-lime-400">
               deadscripts terminal V 1.01
             </p>
             <div className="mb-4 bg-zinc-900 p-4">
@@ -115,7 +115,7 @@ const Core = () => {
               </span>
               :
             </p>
-            <button className="my-6 rounded-xl bg-lime-400 px-4 py-2 font-bold uppercase">
+            <button className="my-6 cursor-not-allowed rounded-xl bg-lime-400 px-4 py-2 font-bold uppercase">
               coming soon
             </button>
             <div className="mt-6 grid grid-cols-2 gap-6">
